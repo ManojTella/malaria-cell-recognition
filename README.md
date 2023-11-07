@@ -5,22 +5,35 @@
 To develop a deep neural network for Malaria infected cell recognition and to analyze the performance.
 
 ## Problem Statement and Dataset
-
+Malaria dataset of 27,558 cell images with an equal number of parasitized and uninfected cells. A level-set based algorithm was applied to detect and segment the red blood cells. The images were collected and annotated by medical professionals.Here we build a convolutional neural network model that is able to classify the cells.
+![image](https://github.com/ManojTella/malaria-cell-recognition/assets/94883876/d12a4a16-da94-48c7-bf94-771027916ec5)
 ## Neural Network Model
-
-Include the neural network model diagram.
+![image](https://github.com/ManojTella/malaria-cell-recognition/assets/94883876/068a2586-7df0-4458-8b7a-2a9e10f02241)
 
 ## DESIGN STEPS
 
 ### STEP 1:
-
+Import tensorflow and preprocessing libraries.
 ### STEP 2:
-
+Download and load the dataset folder.
 ### STEP 3:
-
-Write your own steps
+Split the training and testing folders.
+### STEP 4:
+Perform image data generation methods.
+### STEP 5:
+Build the convolutional neural network model.
+### STEP 6:
+Train the model with the training data.
+### STEP 8:
+Plot the performance plot.
+### STEP 9:
+Evaluate the model with the testing data using probability prediction(uninfected-> prob>0.5,parasitized-> <=0.5).
+### STEP 10:
+Fit the model and predict the sample input.
 
 ## PROGRAM
+#### Developed By: Manoj Guna Sundar Tella.
+#### Reg No: 21222124006.
 ```
 import os
 import pandas as pd
@@ -160,18 +173,18 @@ plt.show()
 
 ### Training Loss, Validation Loss Vs Iteration Plot
 
-Include your plot here
+![image](https://github.com/ManojTella/malaria-cell-recognition/assets/94883876/82a1f363-4bb8-48fc-837d-182931ef925f)
 
 ### Classification Report
 
-Include Classification Report here
+![image](https://github.com/ManojTella/malaria-cell-recognition/assets/94883876/1a11469d-c3b2-4068-bf47-18ee7356a728)
 
 ### Confusion Matrix
 
-Include confusion matrix here
+![image](https://github.com/ManojTella/malaria-cell-recognition/assets/94883876/d088f610-3d1f-46c0-9808-28fa3688a730)
 
 ### New Sample Data Prediction
-
-Include your sample cell image input and output of your model.
+![image](https://github.com/ManojTella/malaria-cell-recognition/assets/94883876/490e8514-e6e8-471d-8e46-161dfa96ba7e)
 
 ## RESULT
+The model's performance is evaluated through training and testing, and it shows potential for assisting healthcare professionals in diagnosing malaria more efficiently and accurately.
